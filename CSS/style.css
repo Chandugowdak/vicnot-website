@@ -1,0 +1,149 @@
+/* Reset default margins/paddings and set a base font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  /* Body setup to allow footer to stick to the bottom if content is short */
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #1a1a40; /* Dark navy background */
+    color: white;
+    padding: 15px;
+    position: sticky; /* Makes the header fixed at top on scroll */
+    top: 0;
+    z-index: 999; /* Keeps it above other elements */
+  }
+  
+  /* Container inside header to align logo and nav */
+  header .container {
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav */
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  
+  /* Logo styles */
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  /* what should happen if i click on logo */
+  .logo a:hover{
+    color:red;
+    cursor:pointer;
+  }
+  .logo a{
+    text-decoration:none;
+    color:white;
+  }
+  
+  /* Navigation styles */
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Navigation link styles */
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 50px; /* Spacing between nav links */
+    font-weight: 500;
+  }
+  
+  /* Hover effect for nav links */
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main section styling */
+  main {
+    flex: 1; /* Allows main to grow and push footer down */
+    padding: 80px 20px;
+    background: #f5f7fa; /* Light background */
+    text-align: center;
+  }
+  
+
+  /* Footer styles */
+  footer {
+    background-color: #1a1a40; /* Matches header */
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+  }
+  
+  /* Footer section for quick links */
+  .footer-links {
+    margin-bottom: 15px;
+  }
+  
+  /* Container for link group */
+  .footer-links .links {
+    margin-top: 10px;
+  }
+  
+  /* Footer link styles */
+  .footer-links a {
+    color: #ffffffcc; /* Slightly transparent white */
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  /* Hover effect for footer links */
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Contact info section in footer */
+  .contact-info {
+    margin: 10px 0;
+  }
+  
+  /* Social media section styling */
+  .social-media {
+    margin-bottom: 10px;
+    color: #ddd;
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media (max-width: 768px) {
+    /* Stack header content vertically on small screens */
+    header .container {
+      flex-direction: column;
+      text-align: center;
+     
+    }
+  
+  
+    /* Stack nav links vertically on small screens */
+    nav a {
+      display: block;
+      margin: 10px 0;
+      padding:10px;
+    }
+  
+    /* Wrap footer links into multiple rows */
+    .footer-links .links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    /* Adjust spacing for footer links on small screens */
+    .footer-links a {
+      margin: 5px 8px;
+    }
+  }
+  

@@ -1,0 +1,23 @@
+vicnot-website/
+│
+├── index.html               # Home Page
+├── about.html               # About Us
+├── services.html            # Services Page
+├── contact.html             # Contact Us
+├── careers.html             # Careers Page
+├── blog.html                # Blog (optional)
+├── faqs.html                # FAQ Page
+├── privacy-policy.html      # Privacy Policy
+├── terms.html               # Terms & Conditions
+├── sitemap.html             # Sitemap
+├── testimonials.html        # Testimonials
+│
+├── css/
+│   └── style.css            # Main stylesheet
+│
+├── js/
+│   └── main.js              # JavaScript for interactivity
+│
+├── images/
+   └── [all images & logos]            # Optional custom fonts
+
