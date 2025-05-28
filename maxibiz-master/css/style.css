@@ -131,7 +131,7 @@ a.remove {
   border-width: 1px
 }
 
-p, pre, ul, ol, dl, dd, blockquote, address, table, fieldset, form, {
+p, pre, ul, ol, dl, dd, blockquote, address, table, fieldset, form {
   margin-bottom: 20px;
 }
 
@@ -184,7 +184,7 @@ dl dd {
 section::before, section::after {
   position: absolute;
   content: '';
-  pointer-post-wraps: none;
+ 
 }
 
 .first {
@@ -2170,8 +2170,7 @@ button.small, .button.small {
   width: 20%;
   height: 100%;
   display: inline-block;
-  *zoom: 1;
-  *display: inline;
+
   background-color: #aaa;
   background-color: rgba(0, 0, 0, .4);
 }
