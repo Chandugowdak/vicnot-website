@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MaxiBiz Bootstrap Business Template</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Ruda:400,900,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/prettyphoto/css/prettyphoto.css" rel="stylesheet">
+  <link href="lib/hover/hoverex-all.css" rel="stylesheet">
+  <link href="lib/jetmenu/jetmenu.css" rel="stylesheet">
+  <link href="lib/owl-carousel/owl-carousel.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/colors/blue.css">
+
+  <!-- =======================================================
+    Template Name: MaxiBiz
+    Template URL: https://templatemag.com/maxibiz-bootstrap-business-template/
+    Author: TemplateMag.com
+    License: https://templatemag.com/license/
+  ======================================================= -->
+  <style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9fbfd;
+        color: #2b2b2b;
+    }
+    
+    .custom-software {
+        padding: 60px 0;
+        background: linear-gradient(to bottom right, #eef4fb, #ffffff);
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    
+    h2, h3 {
+        color: #1a2a44;
+    }
+    
+    h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    
+    h3 {
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    
+    p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #333;
+    }
+    
+    .fade-in {
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeInUp 1s ease forwards;
+    }
+    
+    @keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    .categories {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-bottom: 60px;
+    }
+    
+    .category-card {
+        background: #ffffff;
+        border-left: 5px solid #007bff;
+        border-radius: 10px;
+        box-shadow: 0 6px 20px rgba(0, 123, 255, 0.1);
+        padding: 25px;
+        flex: 1;
+        min-width: 280px;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .category-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 25px rgba(0, 123, 255, 0.2);
+    }
+    
+    .category-card h4 {
+        font-size: 1.3rem;
+        color: #007bff;
+        margin-bottom: 10px;
+    }
+    
+    /* Why Custom Software Section */
+    .why-custom-software {
+        background: #e3f0ff;
+        padding: 40px;
+        border-radius: 12px;
+        margin-bottom: 60px;
+        text-align: center;
+        box-shadow: 0 4px 14px rgba(0, 123, 255, 0.1);
+    }
+    
+    /* Why With Us Section */
+    .why-with-us {
+        margin-bottom: 60px;
+    }
+    
+    .why-with-us ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .why-with-us ul li {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        margin-bottom: 15px;
+        padding-left: 25px;
+        position: relative;
+    }
+    
+    .why-with-us ul li::before {
+        content: "✅";
+        position: absolute;
+        left: 0;
+    }
+    
+    /* Achievements Section */
+    .achievements {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-bottom: 60px;
+    }
+    
+    .achievement-card {
+        background: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+        padding: 25px;
+        flex: 1;
+        min-width: 280px;
+        text-align: center;
+    }
+    
+    .achievement-card h4 {
+        font-size: 2rem;
+        color: #007bff;
+        margin-bottom: 10px;
+    }
+    
+    /* Happy Clients Section */
+    .happy-clients {
+        text-align: center;
+    }
+    
+    .clients-grid {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .client-card {
+        background: #fff;
+        border-left: 5px solid #007bff;
+        border-radius: 10px;
+        box-shadow: 0 6px 16px rgba(0, 123, 255, 0.08);
+        padding: 20px;
+        width: 280px;
+        transition: transform 0.3s ease;
+    }
+    
+    .client-card:hover {
+        transform: scale(1.03);
+    }
+    
+    .client-card p {
+        font-style: italic;
+        margin-bottom: 10px;
+        color: #444;
+    }
+    
+    .client-card h5 {
+        font-size: 1rem;
+        color: #007bff;
+    }
+    
+    /* Responsive */
+    @media (max-width: 767.98px) {
+        h2 {
+            font-size: 2rem;
+        }
+    
+        h3 {
+            font-size: 1.5rem;
+        }
+    
+        p, .why-with-us ul li {
+            font-size: 1rem;
+        }
+    
+        .why-custom-software {
+            padding: 20px;
+        }
+    
+        .category-card, .achievement-card, .client-card {
+            min-width: 100%;
+        }
+    }
+    
+</style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+          <div class="site-header clearfix">
+            <div class="col-lg-3 col-md-3 col-sm-12 title-area">
+              <div class="site-title" id="title">
+                <a href="index.html" title="">
+                  <h4> 𝕍𝕚𝕔𝕟𝕠𝕥</h4>
+                </a>
+              </div>
+            </div>
+            <!-- title area -->
+            <div class="col-lg-9 col-md-12 col-sm-12">
+              <div id="nav" class="right">
+                <div class="container clearfix">
+                  <ul id="jetmenu" class="jetmenu blue">
+                    <li ><a href="index.html">Home</a>
+                    </li>
+                    <li><a href="#">Pages</a>
+                      <ul class="dropdown">
+                       
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="team-members.html">Team Members</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="terms.html">Private Policy</a></li>        
+                        <li><a href="faq.html">FAQ Page</a></li>   
+                        <li><a href="portfolio-3.html">Portfolio</a></li>                
+                                       
+                        <li><a href="support.html">Contact</a>
+                         
+                            
+                           
+                        
+                        </li>   
+                       
+                      </ul>
+                    </li>
+                 
+                   
+                            
+                    <li ><a href="about.html">About Us</a></li>
+                    <li><a href="SEO.html">SEO Services</a></li>    
+                    <li><a href="IOT.html">IOT Services</a></li>
+                    <li><a href="Software.html">Software Services</a></li>
+                    <li><a href="careers.html">Careers</a></li>               
+                    <li><a href="blog.html">Blog</a></li>
+                   
+                   
+                   
+                  </ul>
+                </div>
+              </div>
+              <!-- nav -->
+            </div>
+            <!-- title area -->
+          </div>
+          <!-- site header -->
+        </div>
+        <!-- end container -->
+      </header>
+
+
+      <section class="custom-software">
+        <div class="container">
+            <!-- Categories -->
+            <div class="categories fade-in">
+                <div class="category-card">
+                <a href="webapp.html"> <h4>🌐 Web Applications</h4></a>   
+                    <p>Vicnot builds scalable, user-friendly web applications tailored to your business needs.</p>
+                </div>
+                <div class="category-card">
+                  <a href="Mobile.html">  <h4>📱 Mobile Applications</h4></a>
+                    <p>We develop cross-platform mobile apps with seamless performance and modern design.</p>
+                </div>
+                <div class="category-card">
+                    <a href="Enterprise.html"><h4>🏢 Enterprise Solutions</h4></a>
+                    <p>Our team creates custom software to streamline enterprise operations and enhance efficiency.</p>
+                </div>
+            </div>
+    
+            <!-- Why Custom Software Development -->
+            <div class="why-custom-software fade-in">
+                <h3>💡 Why Custom Software Development?</h3>
+                <p>
+                    Custom software development allows businesses to tackle unique challenges with personalized solutions. At Vicnot, we believe it's key to innovation, productivity, and a competitive edge. Unlike off-the-shelf software, our custom solutions grow with you 🚀.
+                </p>
+            </div>
+    
+            <!-- Why With Us -->
+            <div class="why-with-us fade-in">
+                <h3>🤝 Why Choose Vicnot?</h3>
+                <p>Vicnot is a future-forward company specializing in:</p>
+                <ul>
+                    <li>✅ SEO (Search Engine Optimization)</li>
+                    <li>✅ IoT (Internet of Things) Solutions</li>
+                    <li>✅ End-to-end Custom Software Development</li>
+                </ul>
+                <p>We use agile practices to deliver high-quality software solutions that blend SEO and IoT into your business strategy.</p>
+            </div>
+    
+            <!-- Our Achievements -->
+            <div class="achievements fade-in">
+                <div class="achievement-card">
+                    <h4>🔧 200+</h4>
+                    <p>Custom Projects Delivered</p>
+                </div>
+                <div class="achievement-card">
+                    <h4>💯 98%</h4>
+                    <p>Client Satisfaction Rate</p>
+                </div>
+                <div class="achievement-card">
+                    <h4>🕒 12+</h4>
+                    <p>Years of Software Expertise</p>
+                </div>
+            </div>
+    
+            <!-- Happy Clients -->
+            <div class="happy-clients fade-in">
+                <h3>😊 Happy Clients</h3>
+                <div class="clients-grid">
+                    <div class="client-card">
+                        <p>"Vicnot developed a custom web app that streamlined our operations perfectly!"</p>
+                        <h5>— Mark Wilson, BizGrow</h5>
+                    </div>
+                    <div class="client-card">
+                        <p>"Their mobile app development exceeded our expectations in both design and functionality."</p>
+                        <h5>— Anna Smith, MobileFirst</h5>
+                    </div>
+                    <div class="client-card">
+                        <p>"Vicnot’s enterprise solution transformed our workflow, saving us time and resources."</p>
+                        <h5>— James Carter, EnterpriseTech</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript for Scroll Animation -->
+    <script>
+        const fadeInElements = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        fadeInElements.forEach(element => observer.observe(element));
+    </script>
+    <footer class="footer bg-dark text-light pt-5">
+        <div class="container">
+          <div class="row">
+            <!-- About Vicnot -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <h4 class="mb-3">About Vicnot</h4>
+              <p>Vicnot is your trusted technology partner, specializing in SEO, IoT Solutions, and Custom Software Development.</p>
+              <p>Driving innovation and delivering reliable tech solutions since [Year].</p>
+            </div>
+      
+            <!-- Quick Links -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <h4 class="mb-3">Quick Links</h4>
+              <ul class="list-unstyled">
+                <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+                <li><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
+                <li><a href="services.html" class="text-light text-decoration-none">Services</a></li>
+                <li><a href="careers.html" class="text-light text-decoration-none">Careers</a></li>
+                <li><a href="blog-left-sidebar.html " class="text-light text-decoration-none">Blog</a></li>
+                <li><a href="faq.html" class="text-light text-decoration-none">FAQs</a></li>
+               
+                <li><a href="terms.html" class="text-light text-decoration-none">Terms & Conditions</a></li>
+                
+                <li><a href="testimonials.html" class="text-light text-decoration-none">Testimonials</a></li>
+                <li><a href="contact.html" class="text-light text-decoration-none">Contact Us</a></li>
+              </ul>
+            </div>
+      
+            <!-- Contact Info -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <h4 class="mb-3">Contact Info</h4>
+              <ul class="list-unstyled contact_details">
+                <li><i class="fa fa-envelope me-2"></i> info@vicnot.com</li>
+                <li><i class="fa fa-phone me-2"></i> +1 (555) 123-4567</li>
+                <li><i class="fa fa-map-marker me-2"></i> 123 Tech Street, Innovation City, USA</li>
+              </ul>
+              <div class="social-icons mt-3">
+                <a href="#" class="text-light me-3" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-light me-3" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-light me-3" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="text-light me-3" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+      
+            <!-- Newsletter Signup -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <h4 class="mb-3">Newsletter</h4>
+              <p>Subscribe to our newsletter for updates and tech insights.</p>
+              <form id="newsletter-form" onsubmit="return validateNewsletterForm()">
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    id="newsletter-email"
+                    class="form-control form-control-sm"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+                <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+                <p id="newsletter-msg" class="mt-2" style="display:none;"></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      
+        <div class="copyrights bg-secondary text-light py-3 mt-4">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+                <p class="mb-0">© 2014 - <span id="year"></span> Vicnot. All rights reserved.</p>
+              </div>
+              <div class="col-md-6 text-center text-md-end">
+                <ul class="list-inline mb-0 footer-menu">
+                  <li class="list-inline-item"><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+                  <li class="list-inline-item"><a href="about.html" class="text-light text-decoration-none">About</a></li>
+                  <li class="list-inline-item"><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <script>
+          // Set current year automatically
+          document.getElementById('year').textContent = new Date().getFullYear();
+      
+          // Simple newsletter form validation
+          function validateNewsletterForm() {
+            const emailInput = document.getElementById('newsletter-email');
+            const msg = document.getElementById('newsletter-msg');
+            const email = emailInput.value.trim();
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      
+            if (!emailRegex.test(email)) {
+              msg.style.color = 'red';
+              msg.style.display = 'block';
+              msg.textContent = 'Please enter a valid email address.';
+              return false;
+            }
+      
+            msg.style.color = 'green';
+            msg.style.display = 'block';
+            msg.textContent = 'Thank you for subscribing!';
+            emailInput.value = '';
+            return false; // Prevent actual form submit for demo
+          }
+        </script>
+      </footer>
+      <!-- end footer -->
+      <div class="dmtop">Scroll to Top</div>
+    
+      <!-- JavaScript Libraries -->
+      <script src="lib/jquery/jquery.min.js"></script>
+      <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+      <script src="lib/php-mail-form/validate.js"></script>
+      <script src="lib/prettyphoto/js/prettyphoto.js"></script>
+      <script src="lib/isotope/isotope.min.js"></script>
+      <script src="lib/hover/hoverdir.js"></script>
+      <script src="lib/hover/hoverex.min.js"></script>
+      <script src="lib/unveil-effects/unveil-effects.js"></script>
+      <script src="lib/owl-carousel/owl-carousel.js"></script>
+      <script src="lib/jetmenu/jetmenu.js"></script>
+      <script src="lib/animate-enhanced/animate-enhanced.min.js"></script>
+      <script src="lib/jigowatt/jigowatt.js"></script>
+      <script src="lib/easypiechart/easypiechart.min.js"></script>
+    
+      <!-- Template Main Javascript File -->
+      <script src="js/main.js"></script>
+    
+    </body>
+    </html>
+    
+

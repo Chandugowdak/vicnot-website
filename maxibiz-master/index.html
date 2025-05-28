@@ -23,6 +23,8 @@
   <link href="lib/hover/hoverex-all.css" rel="stylesheet">
   <link href="lib/jetmenu/jetmenu.css" rel="stylesheet">
   <link href="lib/owl-carousel/owl-carousel.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
@@ -34,6 +36,118 @@
     Author: TemplateMag.com
     License: https://templatemag.com/license/
   ======================================================= -->
+  <style>
+    section.clients-section {
+      background-color: #f9f9f9;
+      padding: 4rem 0;
+    }
+  
+    .clients-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #222;
+      position: relative;
+      display: inline-block;
+    }
+  
+    .underline {
+      width: 60px;
+      height: 4px;
+      background-color: #007bff;
+      margin: 0.5rem auto 2rem;
+      border-radius: 5px;
+    }
+  
+    .client-icon {
+      font-size: 3rem;
+      color: #007bff;
+      transition: transform 0.3s ease;
+    }
+  
+    .client-icon:hover {
+      transform: scale(1.2);
+      color: #0056b3;
+    }
+ 
+
+
+
+
+
+  
+      .section-heading {
+        text-align: center;
+        color: white;
+        font-size: 2.5em;
+        font-weight: bold;
+        padding-top: 50px;
+      }
+  
+      .section-heading span {
+        color: #00aaff;
+        border-bottom: 3px solid #00aaff;
+        padding-bottom: 5px;
+      }
+  
+      .blog-card-container {
+        max-width: 1000px;
+        margin: 50px auto;
+        display: flex;
+        background-color: white;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        overflow: hidden;
+      }
+  
+      .blog-image {
+        flex: 1;
+        min-width: 300px;
+      }
+  
+      .blog-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+  
+      .blog-content {
+        flex: 2;
+        padding: 20px;
+      }
+  
+      .blog-content h3 {
+        margin-top: 0;
+        font-size: 1.6em;
+        color: #0073e6;
+      }
+  
+      .blog-date {
+        font-size: 0.9em;
+        color: #666;
+        margin-bottom: 10px;
+      }
+  
+      .blog-date i {
+        margin-right: 5px;
+      }
+  
+      .blog-content p {
+        font-size: 1em;
+        line-height: 1.6;
+        color: #333;
+      }
+  
+      @media (max-width: 768px) {
+        .blog-card-container {
+          flex-direction: column;
+        }
+  
+        .blog-image,
+        .blog-content {
+          width: 100%;
+        }
+      }
+    </style>
 </head>
 
 <body>
@@ -62,21 +176,30 @@
                     <li><a href="services.html">Services</a></li>
                     <li><a href="team-members.html">Team Members</a></li>
                     <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="terms.html">Private Policy</a></li>        
+                    <li><a href="faq.html">FAQ Page</a></li>   
+                    <li><a href="portfolio-3.html">Portfolio</a></li>                
+                                   
+                    <li><a href="support.html">Contact</a>
+                     
+                        
+                       
                     
-                    <li><a href="faq.html">FAQ Page</a></li>                   
-                    <li ><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>                   
-                    <li><a href="register.html">Register</a></li>
+                    </li>   
                    
                   </ul>
                 </li>
+             
                
-                <li><a href="services.html">Services</a></li>              
+                        
                 <li ><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="faq.html">FAQ Page</a></li>
-                <li><a href="register.html">Register</a></li>
-                <li><a href="login.html">Login</a></li>
+                <li><a href="SEO.html">SEO Services</a></li>    
+                <li><a href="IOT.html">IOT Services</a></li>
+                <li><a href="Software.html">Software Services</a></li>
+                <li><a href="careers.html">Careers</a></li>               
+                <li><a href="blog.html">Blog</a></li>
+               
+               
                
               </ul>
             </div>
@@ -115,7 +238,7 @@
             <i class="dm-icon fa fa-line-chart fa-3x" style="color: #4CAF50;"></i>
           </div>
           <div class="servicetitle">
-            <h4>Search Engine Optimization</h4>
+            <a href="SEO.html"><h4>Search Engine Optimization</h4></a>
             <hr>
           </div>
           <p>
@@ -131,7 +254,7 @@
             <i class="dm-icon fa fa-cogs fa-3x" style="color: #2196F3;"></i>
           </div>
           <div class="servicetitle">
-            <h4>IoT Solutions</h4>
+          <a href="IOT.html"><h4>IoT Solutions</h4></a>
             <hr>
           </div>
           <p>
@@ -147,7 +270,7 @@
             <i class="dm-icon fa fa-code fa-3x" style="color: #FF5722;"></i>
           </div>
           <div class="servicetitle">
-            <h4>Custom Software Development</h4>
+          <a href="Software.html" > <h4>Custom Software Development</h4></a>
             <hr>
           </div>
           <p>
@@ -233,6 +356,32 @@
 </section>
 
 
+
+<section class="clients-section text-center">
+  <div class="container">
+    <h2 class="clients-title">OUR CLIENTS</h2>
+    <div class="underline"></div>
+    <div class="row justify-content-center align-items-center">
+      <div class="col-4 col-sm-3 col-md-2 mb-4">
+        <i class="bi bi-shop-window client-icon"></i>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 mb-4">
+        <i class="bi bi-briefcase-fill client-icon"></i>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 mb-4">
+        <i class="bi bi-globe client-icon"></i>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 mb-4">
+        <i class="bi bi-cpu-fill client-icon"></i>
+      </div>
+      <div class="col-4 col-sm-3 col-md-2 mb-4">
+        <i class="bi bi-bank2 client-icon"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <section class="section1 text-center py-5">
   <div class="container">
     <div class="general-title mb-4">
@@ -308,25 +457,92 @@
   </div>
 </section>
 
+<section>
+  <div class="section-heading"> <span> OUR BLOGS</span></div>
+  <div class="blog-card-container">
+    <div class="blog-image">
+      <img src="https://img.freepik.com/free-photo/ai-cloud-concept-with-robot-arm_23-2149739757.jpg" alt="IT Services">
+    </div>
+    <div class="blog-content">
+      <h3>Vicnot: Your Trusted Technology Partner in SEO, IoT, and Custom Software</h3>
+      <div class="blog-date"><i>📅</i> 21 May, 2025</div>
+      <p>Vicnot is a technology-driven company offering specialized services in Search Engine Optimization (SEO), Internet of Things (IoT) solutions, and Custom Software Development. With a team of dedicated professionals, we help businesses build a strong online presence, develop intelligent IoT ecosystems, and create tailored software solutions that solve real-world problems.</p>
+      <p>Our mission is to deliver modern, scalable, and efficient technology services that drive measurable business results. Whether you're looking to boost your search rankings, develop connected IoT devices, or build a full-fledged enterprise application — Vicnot is your reliable technology partner.</p>
+    </div>
+  </div>
+</section>
 
-<section class="section3 py-5 bg-light">
-  <div class="container">
-    <div class="row align-items-center justify-content-between">
-      
-      <div class="col-lg-9 col-md-8 col-sm-12 mb-4 mb-md-0">
-        <h2 class="fw-bold mb-3">Grab the Attention of Your Customers!</h2>
-        <p class="lead text-muted">
-          Stand out in the digital world with Vicnot’s expert services. From SEO to IoT and custom software development, we deliver smart, scalable solutions that put your business ahead of the curve.
-        </p>
+
+<section class="section1">
+  <div class="container clearfix">
+    <div class="content col-lg-12 col-md-12 col-sm-12 clearfix">
+
+      <div class="general-title text-center">
+        <h3>What People Say About Us</h3>
+        <hr>
       </div>
 
-      <div class="col-lg-3 col-md-4 col-sm-12 text-center text-md-end">
-   
+      <div class="col-lg-6 col-md-6 col-sm-12 first">
+        <div class="testimonial">
+          <img data-effect="slide-bottom" class="alignleft img-circle" src="img/team_01.png" alt="">
+          <p>The team exceeded our expectations in both design and delivery. Their attention to detail and creative approach helped us elevate our online presence significantly.</p>
+          <p>I highly recommend them for anyone looking to build a strong digital brand.</p>
+          <div class="testimonial-meta">
+            <h4>Mark Soto <small><a href="#">BlackTie.co</a></small></h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-6 col-sm-12 last">
+        <div class="testimonial">
+          <img data-effect="slide-bottom" class="alignleft img-circle" src="img/team_03.png" alt="">
+          <p>Working with this team was seamless from start to finish. They listened carefully to our needs and transformed our ideas into a beautifully functional website.</p>
+          <p>The project was delivered on time, and the support was exceptional!</p>
+          <div class="testimonial-meta">
+            <h4>Lisa Meyer <small><a href="#">BlackTie.co</a></small></h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-12 first">
+        <div class="testimonial">
+          <img data-effect="slide-bottom" class="alignleft img-circle" src="img/team_02.png" alt="">
+          <p>The dedication and creativity this team brings to the table is unmatched. Our website has never looked better.</p>
+          <div class="testimonial-meta">
+            <h4>Jenny Doe <small><a href="#">google.com</a></small></h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <div class="testimonial">
+          <img data-effect="slide-bottom" class="alignleft img-circle" src="img/team_05.png" alt="">
+          <p>From concept to execution, everything was handled professionally. They truly understand modern web design and development.</p>
+          <div class="testimonial-meta">
+            <h4>John Doe <small><a href="#">microsoft.com</a></small></h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-sm-12 last">
+        <div class="testimonial">
+          <img data-effect="slide-bottom" class="alignleft img-circle" src="img/team_06.png" alt="">
+          <p>The communication, the quality of work, and the end results were all outstanding. I'm glad we chose them for our project.</p>
+          <div class="testimonial-meta">
+            <h4>Jenny Doe <small><a href="#">yahoo.com</a></small></h4>
+          </div>
+        </div>
       </div>
 
     </div>
   </div>
 </section>
+
+
+
+
+
+
 
 
   <!-- end section3 -->

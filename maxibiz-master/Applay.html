@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>MaxiBiz Bootstrap Business Template</title>
@@ -34,11 +35,91 @@
     Author: TemplateMag.com
     License: https://templatemag.com/license/
   ======================================================= -->
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f7fb;
+      padding: 40px 0;
+    }
+
+    .form-container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+      animation: fadeIn 1s ease;
+      margin-top: 20px;
+      margin-bottom:20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      color: #444;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px 14px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+
+    .checkbox-group label {
+      display: inline-block;
+      margin-right: 15px;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .btn-submit {
+      background: #007bff;
+      color: #fff;
+      padding: 12px;
+      border: none;
+      width: 100%;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .btn-submit:hover {
+      background: #0056b3;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 
 <body>
 
-
+  <!-- end topbar -->
   <header class="header">
     <div class="container">
       <div class="site-header clearfix">
@@ -98,82 +179,95 @@
     </div>
     <!-- end container -->
   </header>
-      <main>
-        <div class="container py-5">
-            <div class="row g-5">
-        
-              <!-- Product Summary -->
-              <div class="col-md-6">
-                <div class="card shadow">
-                  <div class="card-body">
-                    <h4 class="card-title">Custom Software Development</h4>
-                    <p class="text-muted">By Vicnot</p>
-                    <ul class="list-group list-group-flush mb-3">
-                      <li class="list-group-item">✔ End-to-End Software Solutions</li>
-                      <li class="list-group-item">✔ Web & Mobile Applications</li>
-                      <li class="list-group-item">✔ Dedicated Development Team</li>
-                      <li class="list-group-item">✔ Post-Deployment Support</li>
-                    </ul>
-                    <h5>Price: ₹25,000</h5>
-                    <p class="text-success">✅ In stock</p>
-                    <p><strong>Delivery:</strong> Within 7 working days (digital delivery)</p>
-                  </div>
-                </div>
-              </div>
-        
-              <!-- Order Form -->
-              <div class="col-md-6">
-                <div class="card shadow">
-                  <div class="card-body">
-                    <h5 class="card-title mb-4">Place Your Order</h5>
-                    <form>
-                      <div class="mb-3">
-                        <label for="name" class="form-label">Full Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Your name" required>
-                      </div>
-        
-                      <div class="mb-3">
-                        <label for="email" class="form-label">Email Address</label>
-                        <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
-                      </div>
-        
-                      <div class="mb-3">
-                        <label for="company" class="form-label">Company (Optional)</label>
-                        <input type="text" class="form-control" id="company" placeholder="Company name">
-                      </div>
-        
-                      <div class="mb-3">
-                        <label for="notes" class="form-label">Project Requirements</label>
-                        <textarea class="form-control" id="notes" rows="3" placeholder="Briefly describe your project"></textarea>
-                      </div>
-        
-                      <div class="mb-3">
-                        <label class="form-label">Payment Method</label>
-                        <select class="form-select" required>
-                          <option selected disabled>Choose payment method</option>
-                          <option value="upi">UPI</option>
-                          <option value="card">Credit/Debit Card</option>
-                          <option value="netbanking">Net Banking</option>
-                        </select>
-                      </div>
-        
-                      <button type="submit" class="btn btn-primary w-100">Confirm Order</button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-        
-            </div>
-        
-            <div class="text-center mt-5">
-              <a href="index.html" class="btn btn-outline-secondary">← Back to Home</a>
-            </div>
-          </div>
-        
-      </main>
+  <!-- end header -->
+  <!-- end header -->
 
 
-    <footer class="footer bg-dark text-light pt-5">
+
+
+    <section>
+
+        <div class="form-container">
+          <h2>Job Application Form</h2>
+          <form>
+            <div class="form-group">
+              <label>Full Name *</label>
+              <input type="text" name="name" required>
+            </div>
+      
+            <div class="form-group">
+              <label>Email Address *</label>
+              <input type="email" name="email" required>
+            </div>
+      
+            <div class="form-group">
+              <label>Phone Number *</label>
+              <input type="tel" name="phone" required>
+            </div>
+      
+            <div class="form-group">
+              <label>Date of Birth</label>
+              <input type="date" name="dob">
+            </div>
+      
+            <div class="form-group">
+              <label>Gender</label>
+              <select name="gender">
+                <option value="">-- Select --</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+              </select>
+            </div>
+      
+            <div class="form-group">
+              <label>Education Qualification</label>
+              <select name="education" required>
+                <option value="">-- Select --</option>
+                <option>BCA</option>
+                <option>BSc</option>
+                <option>B.Tech</option>
+                <option>MCA</option>
+                <option>Other</option>
+              </select>
+            </div>
+      
+            <div class="form-group">
+              <label>Years of Experience</label>
+              <input type="number" name="experience" min="0">
+            </div>
+      
+            <div class="form-group">
+              <label>Experience Description</label>
+              <textarea name="exp_desc" placeholder="Describe your relevant experience..."></textarea>
+            </div>
+      
+            <div class="form-group">
+              <label>Skills (select all that apply)</label>
+              <div class="checkbox-group">
+                <label><input type="checkbox" name="skills" value="HTML"> HTML</label>
+                <label><input type="checkbox" name="skills" value="CSS"> CSS</label>
+                <label><input type="checkbox" name="skills" value="JavaScript"> JavaScript</label>
+                <label><input type="checkbox" name="skills" value="React"> React</label>
+                <label><input type="checkbox" name="skills" value="Python"> Python</label>
+              </div>
+            </div>
+      
+            <div class="form-group">
+              <label>Upload Resume *</label>
+              <input type="file" name="resume" accept=".pdf,.doc,.docx" required>
+            </div>
+      
+            <div class="form-group">
+              <label>Cover Letter</label>
+              <textarea name="cover" placeholder="Write a brief cover letter..."></textarea>
+            </div>
+      
+            <button type="submit" class="btn-submit">Submit Application</button>
+          </form>
+        </div>
+      </section>
+      <footer class="footer bg-dark text-light pt-5">
         <div class="container">
           <div class="row">
             <!-- About Vicnot -->
@@ -281,26 +375,27 @@
           }
         </script>
       </footer>
-<!-- end footer -->
-<div class="dmtop">Scroll to Top</div>
-
-<!-- JavaScript Libraries -->
-<script src="lib/jquery/jquery.min.js"></script>
-<script src="lib/bootstrap/js/bootstrap.min.js"></script>
-<script src="lib/php-mail-form/validate.js"></script>
-<script src="lib/prettyphoto/js/prettyphoto.js"></script>
-<script src="lib/isotope/isotope.min.js"></script>
-<script src="lib/hover/hoverdir.js"></script>
-<script src="lib/hover/hoverex.min.js"></script>
-<script src="lib/unveil-effects/unveil-effects.js"></script>
-<script src="lib/owl-carousel/owl-carousel.js"></script>
-<script src="lib/jetmenu/jetmenu.js"></script>
-<script src="lib/animate-enhanced/animate-enhanced.min.js"></script>
-<script src="lib/jigowatt/jigowatt.js"></script>
-<script src="lib/easypiechart/easypiechart.min.js"></script>
-
-<!-- Template Main Javascript File -->
-<script src="js/main.js"></script>
-
-</body>
-</html>
+      <div class="dmtop">Scroll to Top</div>
+    
+      <!-- JavaScript Libraries -->
+      <script src="lib/jquery/jquery.min.js"></script>
+      <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+      <script src="lib/php-mail-form/validate.js"></script>
+      <script src="lib/prettyphoto/js/prettyphoto.js"></script>
+      <script src="lib/isotope/isotope.min.js"></script>
+      <script src="lib/hover/hoverdir.js"></script>
+      <script src="lib/hover/hoverex.min.js"></script>
+      <script src="lib/unveil-effects/unveil-effects.js"></script>
+      <script src="lib/owl-carousel/owl-carousel.js"></script>
+      <script src="lib/jetmenu/jetmenu.js"></script>
+      <script src="lib/animate-enhanced/animate-enhanced.min.js"></script>
+      <script src="lib/jigowatt/jigowatt.js"></script>
+      <script src="lib/easypiechart/easypiechart.min.js"></script>
+    
+      <!-- Template Main Javascript File -->
+      <script src="js/main.js"></script>
+    
+    </body>
+    
+    </html>
+    

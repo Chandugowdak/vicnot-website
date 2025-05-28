@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>MaxiBiz Bootstrap Business Template</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Ruda:400,900,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/prettyphoto/css/prettyphoto.css" rel="stylesheet">
+  <link href="lib/hover/hoverex-all.css" rel="stylesheet">
+  <link href="lib/jetmenu/jetmenu.css" rel="stylesheet">
+  <link href="lib/owl-carousel/owl-carousel.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/colors/blue.css">
+
+  <!-- =======================================================
+    Template Name: MaxiBiz
+    Template URL: https://templatemag.com/maxibiz-bootstrap-business-template/
+    Author: TemplateMag.com
+    License: https://templatemag.com/license/
+  ======================================================= -->
+  <style>
+    /* Reset & Base */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+      color: #222;
+      line-height: 1.6;
+    }
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    
+    /* Header */
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    nav a {
+      margin-left: 20px;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #cce5ff;
+    }
+
+    /* Main blog container */
+    .vicnot-blog {
+      max-width: 960px;
+      margin: 40px auto 80px;
+      padding: 0 20px 40px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    
+    .blog-title {
+      text-align: center;
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      position: relative;
+      font-weight: 700;
+      color: #007bff;
+    }
+    
+    .underline {
+      width: 80px;
+      height: 5px;
+      background-color: #007bff;
+      margin: 10px auto 40px;
+      border-radius: 3px;
+    }
+    
+    .blog-section {
+      margin-bottom: 50px;
+    }
+    
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 25px;
+      border-left: 6px solid #007bff;
+      padding-left: 18px;
+      color: #0056b3;
+      font-weight: 700;
+    }
+    
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .achievements li,
+    .updates li,
+    .events li,
+    .articles li {
+      font-size: 1.15rem;
+      padding: 15px 0;
+      border-bottom: 1px dashed #ccc;
+      color: #333;
+    }
+    
+    .achievements li span,
+    .updates li span,
+    .events li span,
+    .articles li span {
+      display: block;
+      margin-top: 5px;
+      font-weight: 400;
+      color: #555;
+    }
+    
+    .label {
+      font-weight: 600;
+      color: #0056b3;
+    }
+    
+    .event-title {
+      font-weight: 700;
+      color: #222;
+    }
+    
+    .event-date {
+      color: #777;
+      font-style: italic;
+      font-size: 1rem;
+    }
+    
+    .register-btn {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 8px 16px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 3px 6px rgba(0, 123, 255, 0.4);
+    }
+    
+    .register-btn:hover {
+      background-color: #0056b3;
+      box-shadow: 0 4px 12px rgba(0, 86, 179, 0.6);
+    }
+
+    /* New Articles Section */
+    .articles li {
+      padding: 20px 0;
+      border-bottom: 1px solid #e3e3e3;
+    }
+    .article-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #007bff;
+      margin-bottom: 6px;
+    }
+    .article-meta {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 10px;
+    }
+    .article-excerpt {
+      font-size: 1rem;
+      color: #444;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #007bff;
+      color: white;
+      padding: 25px 20px;
+      text-align: center;
+      font-size: 0.95rem;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+    }
+    footer a {
+      color: #cce5ff;
+      font-weight: 600;
+      margin: 0 8px;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    
+    /* Responsive */
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        margin-top: 10px;
+      }
+      nav a {
+        margin-left: 0;
+        margin-right: 15px;
+      }
+      .vicnot-blog {
+        margin: 20px 15px 60px;
+        padding: 15px;
+      }
+      .blog-title {
+        font-size: 2rem;
+      }
+      .section-title {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- end topbar -->
+
+  <header class="header">
+    <div class="container">
+      <div class="site-header clearfix">
+        <div class="col-lg-3 col-md-3 col-sm-12 title-area">
+          <div class="site-title" id="title">
+            <a href="index.html" title="">
+              <h4> 𝕍𝕚𝕔𝕟𝕠𝕥</h4>
+            </a>
+          </div>
+        </div>
+        <!-- title area -->
+        <div class="col-lg-9 col-md-12 col-sm-12">
+          <div id="nav" class="right">
+            <div class="container clearfix">
+              <ul id="jetmenu" class="jetmenu blue">
+                <li ><a href="index.html">Home</a>
+                </li>
+                <li><a href="#">Pages</a>
+                  <ul class="dropdown">
+                   
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="team-members.html">Team Members</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="terms.html">Private Policy</a></li>        
+                    <li><a href="faq.html">FAQ Page</a></li>   
+                    <li><a href="portfolio-3.html">Portfolio</a></li>                
+                                   
+                    <li><a href="support.html">Contact</a>
+                     
+                        
+                       
+                    
+                    </li>   
+                   
+                  </ul>
+                </li>
+             
+               
+                        
+                <li ><a href="about.html">About Us</a></li>
+                <li><a href="SEO.html">SEO Services</a></li>    
+                <li><a href="IOT.html">IOT Services</a></li>
+                <li><a href="Software.html">Software Services</a></li>
+                <li><a href="careers.html">Careers</a></li>               
+                <li><a href="blog.html">Blog</a></li>
+               
+               
+               
+              </ul>
+            </div>
+          </div>
+          <!-- nav -->
+        </div>
+        <!-- title area -->
+      </div>
+      <!-- site header -->
+    </div>
+    <!-- end container -->
+  </header>
+
+  <section class="vicnot-blog">
+    <h1 class="blog-title">Latest Tech Insights & Updates<div class="underline"></div></h1>
+
+    <!-- Achievements -->
+    <div class="blog-section">
+      <h2 class="section-title">Achievements</h2>
+      <ul class="achievements">
+        <li>
+          <strong>500+</strong> Websites Optimized with SEO –
+          <span>Empowering businesses globally with better online visibility through comprehensive keyword research, technical audits, and on-page enhancements.</span>
+        </li>
+        <li>
+          <strong>300+</strong> IoT Devices Deployed –
+          <span>Smart systems installed in homes and industrial units, enabling automated monitoring, energy savings, and real-time data analytics.</span>
+        </li>
+        <li>
+          <strong>200+</strong> Custom Software Projects Delivered –
+          <span>From CRM platforms to inventory systems, our tailored solutions helped enterprises achieve seamless operational efficiency.</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Changes/Updates -->
+    <div class="blog-section">
+      <h2 class="section-title">Changes / Updates</h2>
+      <ul class="updates">
+        <li>
+          <span class="label">SEO Tools</span> – Launched advanced SEO tools on <em>April 15, 2025</em>.<br />
+          <span>New features include real-time keyword tracking, competitor analysis dashboards, and AI-based content suggestions.</span>
+        </li>
+        <li>
+          <span class="label">IoT Upgrade</span> – Platform updated for scalability on <em>May 1, 2025</em>.<br />
+          <span>Improved support for multi-device integration, firmware over-the-air updates, and enhanced cybersecurity layers.</span>
+        </li>
+        <li>
+          <span class="label">Team Growth</span> – Software team expanded by 20% as of <em>May 20, 2025</em>.<br />
+          <span>New team members bring expertise in AI, machine learning, and full-stack development to support client innovation.</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Previous Events -->
+    <div class="blog-section">
+      <h2 class="section-title">Previous Events</h2>
+      <ul class="events">
+        <li>
+          <span class="event-title">TechCon</span> <span class="event-date">– Oct 10, 2024</span><br />
+          <span>We showcased our next-gen IoT sensors and AI-driven SEO analyzer. The event saw over 3,000 participants from 20+ countries.</span>
+        </li>
+        <li>
+          <span class="event-title">Software Summit</span> <span class="event-date">– Nov 15, 2024</span><br />
+          <span>Our presentation on “Future of Custom Software” sparked conversations about AI integration, blockchain tech, and DevOps efficiency.</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Upcoming Events -->
+    <div class="blog-section">
+      <h2 class="section-title">Upcoming Events</h2>
+      <ul class="events">
+        <li>
+          <span class="event-title">InnovateTech</span> <span class="event-date">– June 20, 2025</span><br />
+          <span>Join us to explore the future of tech – from smart home automation to content optimization powered by AI. Includes expert talks, demos, and networking sessions.</span><br />
+          <a href="Register.html" class="register-btn" target="_blank" rel="noopener">Register</a>
+        </li>
+        <li>
+          <span class="event-title">DevFest</span> <span class="event-date">– July 15, 2025</span><br />
+          <span>Meet developers and innovators at our DevFest! Live coding sessions, workshops on React, Django, IoT SDKs, and project showcases await you.</span><br />
+          <a href="Register.html" class="register-btn" target="_blank" rel="noopener">Register</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- New Articles -->
+    <div class="blog-section">
+      <h2 class="section-title">Featured Articles</h2>
+      <ul class="articles">
+        <li>
+          <div class="article-title">How AI is Revolutionizing SEO in 2025</div>
+          <div class="article-meta">By Jane Doe | May 25, 2025</div>
+          <div class="article-excerpt">
+            Discover the latest AI-powered tools transforming keyword research and content optimization for unprecedented online growth.
+          </div>
+        </li>
+        <li>
+          <div class="article-title">IoT and Smart Homes: What to Expect Next</div>
+          <div class="article-meta">By John Smith | May 15, 2025</div>
+          <div class="article-excerpt">
+            Explore the innovations in home automation, energy management, and security driven by advanced IoT devices and AI integration.
+          </div>
+        </li>
+        <li>
+          <div class="article-title">Best Practices for Custom Software Development</div>
+          <div class="article-meta">By Alice Johnson | April 30, 2025</div>
+          <div class="article-excerpt">
+            Learn how agile methodologies, user-centered design, and continuous integration are shaping successful software projects today.
+          </div>
+        </li>
+      </ul>
+    </div>
+
+  </section>
+
+    <!-- JavaScript for Scroll Animation -->
+    <script>
+        const fadeInElements = document.querySelectorAll('.item');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        fadeInElements.forEach(element => observer.observe(element));
+    </script>
+
+
+
+
+    <footer class="footer bg-dark text-light pt-5">
+        <div class="container">
+          <div class="row">
+            <!-- About Vicnot -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <h4 class="mb-3">About Vicnot</h4>
+              <p>Vicnot is your trusted technology partner, specializing in SEO, IoT Solutions, and Custom Software Development.</p>
+              <p>Driving innovation and delivering reliable tech solutions since [Year].</p>
+            </div>
+      
+            <!-- Quick Links -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <h4 class="mb-3">Quick Links</h4>
+              <ul class="list-unstyled">
+                <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+                <li><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
+                <li><a href="services.html" class="text-light text-decoration-none">Services</a></li>
+                <li><a href="careers.html" class="text-light text-decoration-none">Careers</a></li>
+                <li><a href="blog-left-sidebar.html " class="text-light text-decoration-none">Blog</a></li>
+                <li><a href="faq.html" class="text-light text-decoration-none">FAQs</a></li>
+               
+                <li><a href="terms.html" class="text-light text-decoration-none">Terms & Conditions</a></li>
+                
+                <li><a href="testimonials.html" class="text-light text-decoration-none">Testimonials</a></li>
+                <li><a href="contact.html" class="text-light text-decoration-none">Contact Us</a></li>
+              </ul>
+            </div>
+      
+            <!-- Contact Info -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <h4 class="mb-3">Contact Info</h4>
+              <ul class="list-unstyled contact_details">
+                <li><i class="fa fa-envelope me-2"></i> info@vicnot.com</li>
+                <li><i class="fa fa-phone me-2"></i> +1 (555) 123-4567</li>
+                <li><i class="fa fa-map-marker me-2"></i> 123 Tech Street, Innovation City, USA</li>
+              </ul>
+              <div class="social-icons mt-3">
+                <a href="#" class="text-light me-3" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-light me-3" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-light me-3" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="text-light me-3" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+      
+            <!-- Newsletter Signup -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <h4 class="mb-3">Newsletter</h4>
+              <p>Subscribe to our newsletter for updates and tech insights.</p>
+              <form id="newsletter-form" onsubmit="return validateNewsletterForm()">
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    id="newsletter-email"
+                    class="form-control form-control-sm"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+                <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+                <p id="newsletter-msg" class="mt-2" style="display:none;"></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      
+        <div class="copyrights bg-secondary text-light py-3 mt-4">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+                <p class="mb-0">© 2014 - <span id="year"></span> Vicnot. All rights reserved.</p>
+              </div>
+              <div class="col-md-6 text-center text-md-end">
+                <ul class="list-inline mb-0 footer-menu">
+                  <li class="list-inline-item"><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+                  <li class="list-inline-item"><a href="about.html" class="text-light text-decoration-none">About</a></li>
+                  <li class="list-inline-item"><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <script>
+          // Set current year automatically
+          document.getElementById('year').textContent = new Date().getFullYear();
+      
+          // Simple newsletter form validation
+          function validateNewsletterForm() {
+            const emailInput = document.getElementById('newsletter-email');
+            const msg = document.getElementById('newsletter-msg');
+            const email = emailInput.value.trim();
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      
+            if (!emailRegex.test(email)) {
+              msg.style.color = 'red';
+              msg.style.display = 'block';
+              msg.textContent = 'Please enter a valid email address.';
+              return false;
+            }
+      
+            msg.style.color = 'green';
+            msg.style.display = 'block';
+            msg.textContent = 'Thank you for subscribing!';
+            emailInput.value = '';
+            return false; // Prevent actual form submit for demo
+          }
+        </script>
+      </footer>
+      <!-- end footer -->
+      <div class="dmtop">Scroll to Top</div>
+    
+      <!-- JavaScript Libraries -->
+      <script src="lib/jquery/jquery.min.js"></script>
+      <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+      <script src="lib/php-mail-form/validate.js"></script>
+      <script src="lib/prettyphoto/js/prettyphoto.js"></script>
+      <script src="lib/isotope/isotope.min.js"></script>
+      <script src="lib/hover/hoverdir.js"></script>
+      <script src="lib/hover/hoverex.min.js"></script>
+      <script src="lib/unveil-effects/unveil-effects.js"></script>
+      <script src="lib/owl-carousel/owl-carousel.js"></script>
+      <script src="lib/jetmenu/jetmenu.js"></script>
+      <script src="lib/animate-enhanced/animate-enhanced.min.js"></script>
+      <script src="lib/jigowatt/jigowatt.js"></script>
+      <script src="lib/easypiechart/easypiechart.min.js"></script>
+    
+      <!-- Template Main Javascript File -->
+      <script src="js/main.js"></script>
+    
+    </body>
+    </html>
+    
+</body>
+</html>

@@ -35,10 +35,70 @@
     Author: TemplateMag.com
     License: https://templatemag.com/license/
   ======================================================= -->
+  <style>
+    /* Section background and spacing */
+.join-team-section {
+  background-color: #f5f7fa;
+}
+
+/* Job cards */
+.job-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+/* Typography */
+.join-team-section h2 {
+  font-weight: 700;
+  font-size: 2.6rem;
+  color: #222;
+}
+
+.join-team-section h4 {
+  color: #007bff;
+  font-weight: 600;
+}
+
+/* Animation */
+.animate-fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.8s forwards ease-out;
+}
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+.delay-4 { animation-delay: 0.8s; }
+.delay-5 { animation-delay: 1s; }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+
+
+  </style>
 </head>
 
 <body>
-
 
   <header class="header">
     <div class="container">
@@ -63,21 +123,30 @@
                     <li><a href="services.html">Services</a></li>
                     <li><a href="team-members.html">Team Members</a></li>
                     <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="terms.html">Private Policy</a></li>        
+                    <li><a href="faq.html">FAQ Page</a></li>   
+                    <li><a href="portfolio-3.html">Portfolio</a></li>                
+                                   
+                    <li><a href="support.html">Contact</a>
+                     
+                        
+                       
                     
-                    <li><a href="faq.html">FAQ Page</a></li>                   
-                    <li ><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>                   
-                    <li><a href="register.html">Register</a></li>
+                    </li>   
                    
                   </ul>
                 </li>
+             
                
-                <li><a href="services.html">Services</a></li>              
+                        
                 <li ><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="faq.html">FAQ Page</a></li>
-                <li><a href="register.html">Register</a></li>
-                <li><a href="login.html">Login</a></li>
+                <li><a href="SEO.html">SEO Services</a></li>    
+                <li><a href="IOT.html">IOT Services</a></li>
+                <li><a href="Software.html">Software Services</a></li>
+                <li><a href="careers.html">Careers</a></li>               
+                <li><a href="blog.html">Blog</a></li>
+               
+               
                
               </ul>
             </div>
@@ -92,61 +161,64 @@
   </header>
 
 
-      <main class="py-5 bg-light">
-        <div class="container">
-          <h2 class="text-center mb-4">Join the Team at Vicnot</h2>
-          <p class="text-center mb-5">At <strong>Vicnot</strong>, we're building the future through innovation in <strong>IoT, SEO</strong>, and <strong>Software Development</strong>. We’re always looking for passionate minds to join us on this mission.</p>
-      
-          <div class="row">
-            <div class="col-md-4 mb-4">
-              <div class="p-4 shadow-sm bg-white h-100 rounded">
-                <h4>🌐 SEO Specialist</h4>
-                <p>Drive organic growth and online visibility for our products and clients. Must have deep understanding of search engines and analytics tools.</p>
-                <ul>
-                  <li>2+ years experience</li>
-                  <li>Google Analytics, SEMrush, Ahrefs</li>
-                </ul>
-                <a href="#apply" class="btn btn-primary mt-2">Apply Now</a>
-              </div>
-            </div>
-      
-            <div class="col-md-4 mb-4">
-              <div class="p-4 shadow-sm bg-white h-100 rounded">
-                <h4>🔧 IoT Engineer</h4>
-                <p>Work on cutting-edge IoT systems, from smart devices to embedded systems and cloud integration. Contribute to real-world automation.</p>
-                <ul>
-                  <li>Experience with Arduino, Raspberry Pi</li>
-                  <li>Knowledge of MQTT, HTTP protocols</li>
-                </ul>
-                <a href="#apply" class="btn btn-primary mt-2">Apply Now</a>
-              </div>
-            </div>
-      
-            <div class="col-md-4 mb-4">
-              <div class="p-4 shadow-sm bg-white h-100 rounded">
-                <h4>💻 Software Developer</h4>
-                <p>Join our software team to build scalable web and mobile solutions. Work on real projects that impact clients and users.</p>
-                <ul>
-                  <li>React, Node.js, Python, or Java</li>
-                  <li>Strong problem-solving skills</li>
-                </ul>
-                <a href="#apply" class="btn btn-primary mt-2">Apply Now</a>
-              </div>
-            </div>
-          </div>
-      
-          <hr class="my-5">
-      
-          <div class="text-center">
-            <h4 id="apply" class="mb-3">Don’t see a role that fits?</h4>
-            <p class="mb-3">We’re always open to new talent. If you’re passionate about <strong>technology, creativity, and innovation</strong>, send your resume to:</p>
-            <p><strong>Email:</strong> careers@vicnot.com</p>
-            <p><strong>Location:</strong> Mysuru, Karnataka, India</p>
-            <a href="mailto:careers@vicnot.com" class="btn btn-outline-dark mt-3">Send Your Resume</a>
+  <main class="py-5 join-team-section">
+    <div class="container">
+      <h2 class="text-center mb-4 animate-fade-up">Join the Team at Vicnot</h2>
+      <p class="text-center mb-5 animate-fade-up delay-1">
+        At <strong>Vicnot</strong>, we're building the future through innovation in <strong>IoT, SEO</strong>, and <strong>Software Development</strong>.
+        We’re always looking for passionate minds to join us on this mission.
+      </p>
+  
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="job-card animate-fade-up delay-2">
+            <h4>🌐 SEO Specialist</h4>
+            <p>Drive organic growth and online visibility for our products and clients. Must have deep understanding of search engines and analytics tools.</p>
+            <ul>
+              <li>2+ years experience</li>
+              <li>Google Analytics, SEMrush, Ahrefs</li>
+            </ul>
+            <a href="Applay.html" class="btn btn-primary mt-2">Apply Now</a>
           </div>
         </div>
-      </main>
-      
+  
+        <div class="col-md-4 mb-4">
+          <div class="job-card animate-fade-up delay-3">
+            <h4>🔧 IoT Engineer</h4>
+            <p>Work on cutting-edge IoT systems, from smart devices to embedded systems and cloud integration. Contribute to real-world automation.</p>
+            <ul>
+              <li>Experience with Arduino, Raspberry Pi</li>
+              <li>Knowledge of MQTT, HTTP protocols</li>
+            </ul>
+            <a href="Applay.html" class="btn btn-primary mt-2">Apply Now</a>
+          </div>
+        </div>
+  
+        <div class="col-md-4 mb-4">
+          <div class="job-card animate-fade-up delay-4">
+            <h4>💻 Software Developer</h4>
+            <p>Join our software team to build scalable web and mobile solutions. Work on real projects that impact clients and users.</p>
+            <ul>
+              <li>React, Node.js, Python, or Java</li>
+              <li>Strong problem-solving skills</li>
+            </ul>
+            <a href="Applay.html" class="btn btn-primary mt-2">Apply Now</a>
+          </div>
+        </div>
+      </div>
+  
+      <hr class="my-5">
+  
+      <div class="text-center animate-fade-up delay-5">
+        <h4 id="apply" class="mb-3">Don’t see a role that fits?</h4>
+        <p class="mb-3">We’re always open to new talent. If you’re passionate about <strong>technology, creativity, and innovation</strong>, send your resume to:</p>
+        <p><strong>Email:</strong> careers@vicnot.com</p>
+        <p><strong>Location:</strong> Mysuru, Karnataka, India</p>
+        <a href="mailto:careers@vicnot.com" class="btn btn-outline-dark mt-3">Send Your Resume</a>
+      </div>
+    </div>
+  </main>
+  
 
     
 <!-- end section3 -->
